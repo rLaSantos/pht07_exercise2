@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- // ? Styles -->
+    <link rel="stylesheet" type="text/css" href="./public/style/style.css">
+    <link rel="stylesheet" type="text/css" href="../public/style/general.css">
+    
+    <!-- // ? Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        html {
+            background-image: url("https://images.pexels.com/photos/707344/pexels-photo-707344.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        }
+    </style>
+
+    <link rel="icon"
+        href="https://png.pngtree.com/png-clipart/20220626/original/pngtree-pink-cute-cat-icon-animal-png-yuri-png-image_8188672.png"
+        type="image/x-icon" />
+    <title>Erst</title>
+</head>
+
+<body>
+
+    <main>
+
+        <section class="quote">
+
+            <p id="quote"></p>
+            <span id="author"></span> &emsp13;
+            <i class="fa fa-refresh pointer text-danger" aria-hidden="true" onclick="refreshQuote()"></i>
+        </section>
+
+        <section class="to-home">
+
+            <input type="text" id="name" name="name" placeholder="Nickname" required> <br />
+            <button onclick="enter()" class="to-home bg-secondary">Enter</button>
+        </section>
+    </main>
+</body>
+
+<!-- // ? JS links -->
+<script src="./public/js/quotes.js"></script>
+<script language="javascript" type="text/javascript" src="./public/js/misc.js"></script>
+
+</html>
