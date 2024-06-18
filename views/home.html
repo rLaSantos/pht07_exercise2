@@ -24,7 +24,7 @@
     <title>Home</title>
 </head>
 
-<body class="ma-0 pa-0">
+<body>
 
     <header>
         <nav class="bg-primary">
@@ -38,72 +38,53 @@
         </nav>
     </header>
 
+    <br />
+
     <main>
-
         <section>
-            <table>
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th style="width: 3%;"></th>
-                        <th colspan="2" style="width: 80%;"></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td rowspan="6">
-                            <img src="../public/img/placeholder.jpg" alt="image" width="100%">
-                        </td>
-                        <td colspan="3">
-                            <h2 class="text-dark pl-1" style="margin: 0;">Basic Information</h2>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <i class="fa fa-address-card text-primary pl-1" aria-hidden="true"></i>
-                        </td>
-                        <td style="width: 10%;">
-                            <span class="bold">Name:</span>
-                        </td>
-                        <td>Marla Santos</td>
-                    </tr>
+            <div class="basic-info flex-container text-primary pt-4">
+                <div class="flex-item flex-basic1 text-center">
+                    <img src="../public/img/placeholder.jpg" alt="image" width="90%">
+                </div>
 
-                    <tr>
-                        <td>
-                            <i class="fa fa-birthday-cake text-primary pl-1" aria-hidden="true"></i> &nbsp;
-                        </td>
-                        <td>
-                            <span class="bold">Birthday:</span>
-                        </td>
-                        <td>July 04</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <i class="fa fa-female text-primary pl-1" aria-hidden="true"></i> &nbsp;
-                        </td>
-                        <td>
-                            <span class="bold">Gender:</span>
-                        </td>
-                        <td>Female</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <i class="fa fa-phone text-primary pl-1" aria-hidden="true"></i> &nbsp;
-                        </td>
-                        <td>
-                            <span class="bold">Contact No.:</span>
-                        </td>
-                        <td>+630011223345</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <i class="fa fa-envelope text-primary pl-1" aria-hidden="true"></i> &nbsp;
-                        </td>
-                        <td><span class="bold">Email Address:</span></td>
-                        <td>mail@gmail.com</td>
-                    </tr>
-                </tbody>
-            </table>
+                <div class="flex-item flex-basic2">
+                    <h2 class="text-dark pl-2 bold">
+                        Basic Information
+                    </h2>
+
+                    <hr class="mx-2">
+
+                    <div class="name mb-1 mt-3">
+                        <i class="fa fa-address-card text-primary ml-2 mr-1" aria-hidden="true"></i>
+                        <span class="bold">Name:</span>
+                        <span class="ml-1">Marla Santos</span>
+                    </div>
+
+                    <div class="birthday mb-1">
+                        <i class="fa fa-birthday-cake text-primary ml-2 mr-1" aria-hidden="true"></i>
+                        <span class="bold">Birthday:</span>
+                        <span class="ml-1">July 04</span>
+                    </div>
+
+                    <div class="gender mb-1">
+                        <i class="fa fa-female text-primary mx-2" aria-hidden="true"></i>
+                        <span class="bold">Gender:</span>
+                        <span class="ml-1">Female</span>
+                    </div>
+
+                    <div class="contact mb-1">
+                        <i class="fa fa-phone text-primary mx-2" aria-hidden="true"></i>
+                        <span class="bold">Number:</span>
+                        <span class="ml-1">+63112233445</span>
+                    </div>
+
+                    <div class="email mb-1">
+                        <i class="fa fa-envelope text-primary ml-2 mr-1" aria-hidden="true"></i>
+                        <span class="bold">Email:</span>
+                        <span class="ml-1">mail@gmail.com</span>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section class="tabs">
@@ -115,57 +96,54 @@
 
             <div id="hobby" class="div show">
                 <ul type="square" class="text-primary">
-                    <li class="my-1">Reading Light Novels</li>
+                    <li>Reading Light Novels</li>
                     <li>Playing Keyboard</li>
                 </ul>
             </div>
 
-            <div id="skill" class="div hidden">
-                <table class="ma-0 text-primary">
-                    <tbody>
-                        <tr>
-                            <td>
-                                <ul type="square">
-                                    <li>PHP</li>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>Javascript</li>
-                                </ul>
-                            </td>
-                            <td>
-                                <ul type="square">
-                                    <li>DBMS:</li>
-                                    <ol>
-                                        <li>MySQL</li>
-                                        <li>Maria DB</li>
-                                    </ol>
-                                </ul>
-                            </td>
-                            <td>
-                                <ul type="square">
-                                    <li>Frameworks:
-                                        <ol>
-                                            <li>Laravel</li>
-                                            <li>Yii2</li>
-                                            <li>VueJs</li>
-                                        </ol>
-                                    </li>
-                                </ul>
-                            </td>
-                            <td>
-                                <ul type="square">
-                                    <li>Version Control System:
-                                        <ol>
-                                            <li>GitHub</li>
-                                            <li>GitLab</li>
-                                        </ol>
-                                    </li>
-                                </ul>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div id="skill" class="div hidden pb-4">
+                <div class="flex-container text-primary">
+                    <div class="flex-item flex-item1">
+                        <ul type="square">
+                            <li>PHP</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Javascript</li>
+                        </ul>
+                    </div>
+                    <div class="flex-item flex-item2">
+                        <ul type="square">
+                            <li>Frameworks:
+                                <ol>
+                                    <li>Laravel</li>
+                                    <li>Yii2</li>
+                                    <li>VueJs</li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex-item flex-item3">
+                        <ul type="square">
+                            <li>DBMS:</li>
+                            <ol>
+                                <li>MySQL</li>
+                                <li>Maria DB</li>
+                            </ol>
+                        </ul>
+                    </div>
+                    <div class="flex-item flex-item4">
+                        <ul type="square">
+                            <li>Version Control System:
+                                <ol>
+                                    <li>GitHub</li>
+                                    <li>GitLab</li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
+
         </section>
     </main>
 
@@ -177,7 +155,8 @@
 
     <footer class="bg-secondary text-light-gray">
         <span>
-            <a href="https://github.com/rLaSantos" class="fa fa-github fa-lg text-light-gray" target="_blank"></a> &emsp13;
+            <a href="https://github.com/rLaSantos" class="fa fa-github fa-lg text-light-gray" target="_blank"></a>
+            &emsp13;
             <a href="https://linkedin.com/in/marlasantos473" class="fa fa-linkedin-square fa-lg text-light-gray"
                 target="_blank"></a>
         </span>

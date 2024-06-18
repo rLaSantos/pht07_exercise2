@@ -10,7 +10,7 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #F7F7F5;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 span {
@@ -51,7 +51,7 @@ button {
 
     &.to-index {
         border: none;
-        padding: 14px 28px;
+        padding: 15px 28px;
         display: inline-block;
 
         &:hover {
@@ -127,24 +127,33 @@ aside {
 }
 
 footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
     text-align: center;
-    height: 35px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 8px;
 
     & span {
+        color: #ffffff;
+        font-size: 16px;
         margin: 0;
-        position: absolute;
-        top: 50%;
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
+
+        a {
+            text-decoration: none;
+            &:hover {
+                color: #feb941;
+            }
+        }
     }
 }
 
-/* // For Navigation Bar */
 nav {
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+
     ul {
         list-style-type: none;
         margin: 0;
@@ -154,13 +163,11 @@ nav {
         li.right {
             float: right;
         }
-    }
-}
 
-/* // Elements */
-textarea {
-    margin-top: 10px;
-    width: 80%;
+        li.left {
+            float: left;
+        }
+    }
 }
 
 input {
@@ -171,22 +178,4 @@ input {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-}
-
-table {
-    margin: 50px auto;
-    width: 80%;
-}
-
-iframe {
-    height: 100%;
-    width: 100%;
-}
-
-a {
-    text-decoration: none;
-
-    &:hover {
-        color: #feb941;
-    }
 }
