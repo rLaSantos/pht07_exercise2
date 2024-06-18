@@ -24,3 +24,39 @@
 - 🌐 Head over to GitHub and create a remote repository. Follow the git commands we discussed to push your local repository to GitHub. This step ensures that your work is safely stored online and can be shared with others.
 
 🚧 Remember, this is your personal space on the internet, and it's a canvas for your creativity. Don't hesitate to experiment, explore, and enjoy the process of building your first personal website using HTML! ✨ *Feel free to personalize the content to reflect yourself. This activity will lay the groundwork for more advanced web development concepts in the upcoming sessions*💻
+
+---
+
+## ✨**Practice Exercise from Day 5**
+
+### Personal Website Styling 🌈
+
+**1. Access Your Personal Website:**
+
+- Open the HTML file of your personal website that you created earlier. 🌐
+
+**2. Infuse Personality with CSS:**
+
+- Your task is to add CSS styling to your webpage. Experiment with different CSS properties to give your site a unique and personalized look. 🎨
+
+**3. Express Yourself:**
+
+- This is your chance to let your creativity shine! Infuse elements that represent you - colors, fonts, layouts - make it uniquely yours. 💡
+
+**4. Get Creative:**
+
+- Try out varous CSS properties like background colors, fonts, margins, paddings, and more. Play around with positioning to create an aesthetically pleasing layout. 🖊
+
+**5. Unleash Your Creativity:**
+
+- Your personal website is your virtual space and canvas. Unleash your creativity and let your coding and styling reflect your personality. 🚀
+
+**6. Reflect You:**
+
+- Your personal website should feel like and extension of you. Whether it's subtle and minimalistic or bold and vibrant, make it uniquely yours. 🌟
+
+**7. Start Styling:**
+
+- Unleash your creativity, and let your personal website reflect you! 💫
+
+**Have fun, and let your creativity flow! 🎨✨**
