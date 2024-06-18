@@ -21,7 +21,7 @@ let quotes = [{
 ]
 
 
-// //Ranmize Quotes
+// //Randomize Quotes
 function quoteToday(quotes) {
 
     let random = Math.floor((Math.random() * quotes.length));

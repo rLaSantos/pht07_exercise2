@@ -1,35 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-
-* {
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-}
-
-html {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #F7F7F5;
-}
-
-.hidden {
-    display: none;
-}
-
-.show {
-    display: block;
-}
-
-.pointer {
-    cursor: pointer;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
-
-/* // ? Font */
+/* // Font */
 .text-center {
     text-align: center;
 }
@@ -40,6 +9,14 @@ body {
 
 .text-left {
     text-align: left;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
 }
 
 .bold {
@@ -54,7 +31,7 @@ body {
     text-decoration: underline;
 }
 
-/* // ? Text and Background Colors */
+/* // Text and Background Colors */
 /* *Texts */
 .text-info {
     color: #6dc5d1;
@@ -121,7 +98,7 @@ body {
     background-color: #2a2829;
 }
 
-/* // ? Margin */
+/* // Margin */
 .ma-0 {
     margin: 0;
 }
@@ -142,20 +119,58 @@ body {
     margin: 25px;
 }
 
+.my-0 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .my-1 {
-    margin: 10px auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .my-2 {
-    margin: 15px auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .my-3 {
-    margin: 20px auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .my-4 {
-    margin: 25px auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.mx-0 {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.mx-1 {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.mx-2 {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.mx-3 {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.mx-4 {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.ml-0 {
+    margin-left: 0;
 }
 
 .ml-1 {
@@ -174,6 +189,10 @@ body {
     margin-left: 25px;
 }
 
+.mr-0 {
+    margin-right: 0;
+}
+
 .mr-1 {
     margin-right: 10px;
 }
@@ -188,6 +207,10 @@ body {
 
 .mr-4 {
     margin-right: 25px;
+}
+
+.mt-0 {
+    margin-top: 0;
 }
 
 .mt-1 {
@@ -206,6 +229,10 @@ body {
     margin-top: 25px;
 }
 
+.mb-0 {
+    margin-bottom: 0;
+}
+
 .mb-1 {
     margin-bottom: 10px;
 }
@@ -222,7 +249,7 @@ body {
     margin-bottom: 25px;
 }
 
-/* // ? Padding */
+/* // Padding */
 .pa-0 {
     padding: 0;
 }
@@ -243,20 +270,58 @@ body {
     padding: 25px;
 }
 
+.py-0 {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
 .py-1 {
-    padding: 10px auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .py-2 {
-    padding: 15px auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .py-3 {
-    padding: 20px auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .py-4 {
-    padding: 25px auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.px-0 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.px-1 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.px-2 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.px-3 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.px-4 {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.pl-0 {
+    padding-left: 0;
 }
 
 .pl-1 {
@@ -275,6 +340,10 @@ body {
     padding-left: 25px;
 }
 
+.pr-0 {
+    padding-right: 0;
+}
+
 .pr-1 {
     padding-right: 10px;
 }
@@ -291,6 +360,10 @@ body {
     padding-right: 25px;
 }
 
+.pt-0 {
+    padding-top: 0;
+}
+
 .pt-1 {
     padding-top: 10px;
 }
@@ -305,6 +378,10 @@ body {
 
 .pt-4 {
     padding-top: 25px;
+}
+
+.pb-0 {
+    padding-bottom: 0;
 }
 
 .pb-1 {

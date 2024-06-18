@@ -7,7 +7,7 @@ let page = pathName.split("/").pop();
 // //Variables
 let nickName = localStorage.getItem("name");
 
-// //Validate if local Sotrage have name and in page is in home
+// //Validate if local Sotrage have name and the page is in home
 if (page == "home.html") {
 
     if (nickName) {
@@ -69,6 +69,8 @@ function openTab(tabName) {
         tab[i].classList.remove("tabs-open");
     }
 
+    activeDiv.classList.remove("hidden");
     activeDiv.classList.add("show");
+    
     activeTab.classList.add("tabs-open");
 }
