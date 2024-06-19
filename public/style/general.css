@@ -1,7 +1,22 @@
 @media screen and (max-width:768px) {
+
+    div#main-form {
+        margin: 0;
+        padding: 0;
+    }
+
+    div#sub-form {
+
+        & input,
+        textarea {
+            width: 90%;
+        }
+    }
+
     html {
         background-repeat: repeat;
     }
+
     h2 {
         text-align: center;
     }
@@ -15,6 +30,7 @@
     html {
         background-repeat: repeat;
     }
+
     aside {
         display: none;
     }
@@ -103,7 +119,7 @@ div#hobby {
 /* // Text and Background Colors */
 /* *Texts */
 .text-info {
-    color: #6dc5d1;
+    color: #3a93e6;
 }
 
 .text-danger {
@@ -136,7 +152,7 @@ div#hobby {
 
 /* *Backgrounds */
 .bg-info {
-    background-color: #6dc5d1;
+    background-color: #3a93e6;
 }
 
 .bg-danger {

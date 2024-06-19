@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- // Styles -->
+    <link rel="stylesheet" type="text/css" href="../public/style/style.css">
+    <link rel="stylesheet" type="text/css" href="../public/style/general.css">
+
+    <!-- // Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        html {
+            background-image: url("https://static.vecteezy.com/system/resources/previews/007/629/858/original/pastel-watercolor-cloud-background-free-vector.jpg");
+        }
+    </style>
+
+    <link rel="icon"
+        href="https://png.pngtree.com/png-clipart/20220626/original/pngtree-pink-cute-cat-icon-animal-png-yuri-png-image_8188672.png"
+        type="image/x-icon" />
+    <title>Quotes</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="bg-primary">
+            <ul>
+                <li class="left my-2">
+                    <a href="home.html">Erst</a>
+                </li>
+                <li class="left my-2">
+                    <a href="home.html">Home</a>
+                </li>
+                <li class="left my-2">
+                    <a href="quote.html">Quotes</a>
+                </li>
+
+                <li class="right">
+                    <button onclick="index()" class="to-index bg-danger">
+                        <i class="fa fa-power-off" aria-hidden="true"></i>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <br />
+
+    <main>
+        <section class="pt-4">
+
+            <div id="main-form" class="ml-4">
+                <h2>
+                    Quotes
+                    <button class="buttonQuote" onclick="setFunction('create', null)">
+                        <i class="fa fa-plus-square pointer text-primary" aria-hidden="true"></i>
+                    </button>
+                    <button class="buttonQuote" onclick="restore()">
+                        <i class="fa fa-refresh pointer text-danger" aria-hidden="true"></i>
+                    </button>
+                </h2>
+
+                <div id="sub-form" class="ml-4 mb-4 hidden">
+
+                    <input class="mb-1" type="text" id="newAuthor" name="newAuthor" placeholder="Author">
+                    <textarea class="mb-1 mt-0" name="newQuote" id="newQuote" placeholder="Quote"></textarea>
+
+                    <br />
+
+                    <div class="buttons">
+                        <button class="bg-warning cancel" onclick="cancel()">Cancel</button>
+                        <button class="bg-primary submit" onclick="submit()">Submit</button>
+                    </div>
+                </div>
+                <hr>
+            </div>
+
+            <ul id="quote" type="square" class="text-primary mb-4 pb-4"></ul>
+            <br />
+        </section>
+    </main>
+    <footer class="bg-secondary text-light-gray">
+        <span>
+            <a href="https://github.com/rLaSantos" class="fa fa-github fa-lg text-light-gray" target="_blank"></a>
+            &emsp13;
+            <a href="https://linkedin.com/in/marlasantos473" class="fa fa-linkedin-square fa-lg text-light-gray"
+                target="_blank"></a>
+        </span>
+    </footer>
+</body>
+
+<!-- // JS Links -->
+<script language="javascript" type="text/javascript" src="../public/js/global.js"></script>
+<script language="javascript" type="text/javascript" src="../public/js/quotes.js"></script>
+<script language="javascript" type="text/javascript" src="../public/js/misc.js"></script>
+
+</html>

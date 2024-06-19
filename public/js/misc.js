@@ -1,28 +1,41 @@
-// //Paths
-let baseUrl = window.location.origin;
-let home = baseUrl + "/views/home.html";
-let pathName = window.location.pathname;
-let page = pathName.split("/").pop();
-
-// //Variables
 let nickName = localStorage.getItem("name");
 
-// //Validate if local Sotrage have name and the page is in home
-if (page == "home.html") {
+// //Check if local storage have a name item
+if (page == "") {
 
     if (nickName) {
 
-        document.getElementById("target").innerText = nickName.toUpperCase() + "!";
-    } else {
-
-        location.href = baseUrl;
-        alert("Nickname is required!");
+        location.href = home;
     }
 } else {
 
-    if (nickName) {
+    if (!nickName) {
 
-        location.href = home
+        alert("Nickname is required!");
+        location.href = baseUrl;
+    }
+
+    if (page == "home.html") {
+
+        document.getElementById("target").innerText = nickName.toUpperCase() + "!";
+
+        let show = localStorage.getItem("show");
+        let aside = document.getElementById("aside");
+
+        if (show == "show") {
+
+            setTimeout(() => {
+
+                aside.classList.remove("show");
+                aside.classList.add("hidden");
+
+                localStorage.setItem("show", "hidden");
+            }, 5000);
+        } else {
+
+            aside.classList.remove("show");
+            aside.classList.add("hidden");
+        }
     }
 }
 
@@ -35,6 +48,7 @@ function enter() {
 
         localStorage.setItem("name", name);
         location.href = home;
+        localStorage.setItem("show", "show");
     } else {
 
         alert("Nickname is required!");
@@ -45,6 +59,8 @@ function enter() {
 function index() {
 
     localStorage.removeItem("name");
+    localStorage.setItem("show", "show");
+    // localStorage.removeItem("quotes");
     location.href = baseUrl
 }
 
@@ -61,7 +77,7 @@ function openTab(tabName) {
     let activeTab = document.getElementById(tabName + "-tab");
 
     // // Loop through to remove classes
-    for (var i = 0; i < tab.length; i++) {
+    for (let i = 0; i < tab.length; i++) {
 
         div[i].classList.remove("show");
         div[i].classList.add("hidden");
@@ -71,6 +87,6 @@ function openTab(tabName) {
 
     activeDiv.classList.remove("hidden");
     activeDiv.classList.add("show");
-    
+
     activeTab.classList.add("tabs-open");
 }
