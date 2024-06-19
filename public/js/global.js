@@ -1,6 +1,6 @@
 // //Paths
 let baseUrl = window.location.origin;
-let home = baseUrl + "/views/home.html";
+let home = `${ baseUrl }/views/home.html`;
 let pathName = window.location.pathname;
 let page = pathName.split("/").pop();
 
@@ -27,22 +27,12 @@ let quotes = [{
     }
 ];
 
-function arrayToString(arr) {
-
-    return JSON.stringify(arr);
-}
-
-function stringToArray(str) {
-
-    return JSON.parse(str);
-}
-
 let getQuotes = localStorage.getItem("quotes");
-let arrayQuotes = getQuotes ? stringToArray(getQuotes) : quotes;
+let arrayQuotes = getQuotes ? JSON.parse(getQuotes) : quotes;
 
 if (!getQuotes) {
 
-    let stringQuotes = arrayToString(quotes);
+    let stringQuotes = JSON.stringify(quotes);
     localStorage.setItem("quotes", stringQuotes);
 
     getQuotes = localStorage.getItem("quotes");

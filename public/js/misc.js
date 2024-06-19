@@ -1,7 +1,7 @@
 let nickName = localStorage.getItem("name");
 
 // //Check if local storage have a name item
-if (page == "") {
+if (page == "" || page == "index.html") {
 
     if (nickName) {
 
@@ -17,7 +17,7 @@ if (page == "") {
 
     if (page == "home.html") {
 
-        document.getElementById("target").innerText = nickName.toUpperCase() + "!";
+        document.getElementById("target").innerText = `${ nickName.toUpperCase() }! `;
 
         let show = localStorage.getItem("show");
         let aside = document.getElementById("aside");
@@ -74,7 +74,7 @@ function openTab(tabName) {
 
     // //Selecting Tabs && Current Active Tab
     let tab = document.getElementsByClassName("tabs-button");
-    let activeTab = document.getElementById(tabName + "-tab");
+    let activeTab = document.getElementById(`${ tabName }-tab`);
 
     // // Loop through to remove classes
     for (let i = 0; i < tab.length; i++) {

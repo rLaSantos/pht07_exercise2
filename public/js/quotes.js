@@ -1,9 +1,13 @@
+let subFormElement = document.getElementById("sub-form");
+let createUpdate;
+let quoteIndex;
+
 // //Randomize Quotes
 function quoteToday(arrayQuotes) {
 
     let random = Math.floor((Math.random() * arrayQuotes.length));
 
-    document.getElementById('author').innerText = "~" + arrayQuotes[random].author;
+    document.getElementById('author').innerText = `~ ${ arrayQuotes[random].author }`;
     document.getElementById('quote').innerText = arrayQuotes[random].quote;
 }
 
@@ -13,18 +17,18 @@ function displayQuotes(arrayQuotes) {
     arrayQuotes.forEach((element, index) => {
 
         document.getElementById('quote').innerHTML +=
-            `<li id="update` + index + `" type="square" class="italic text-primary ml-3 mb-1">` +
+            `<li type="square" class="italic text-primary ml-3 mb-1">
 
-            `<button class="buttonQuote" onclick="del(` + index + `)">
+            <button class="buttonQuote" onclick="del(${ index })">
                 <i class="fa fa-trash-o pointer text-danger" aria-hidden="true"></i>
-            </button>` +
+            </button>
 
-            `<button class="buttonQuote" onclick="setFunction('update', ` + index + `)">
+            <button class="buttonQuote" onclick="setFunction('update', ${ index })">
                 <i class="fa fa-pencil-square-o pointer text-info" aria-hidden="true"></i>
-            </button>` +
+            </button>
 
-            element.quote + `<span class="bold text-danger"> ~ ` + element.author +
-            `</span></li>`;
+            ${ element.quote} <span class="bold text-danger"> ~ ${ element.author }
+            </span></li>`;
     });
 }
 
@@ -39,11 +43,6 @@ function refreshQuote() {
 }
 
 // //Show/Hide/Set Function of Form
-
-let subFormElement = document.getElementById("sub-form");
-let createUpdate = 'create';
-let quoteIndex = 0;
-
 function show() {
 
     subFormElement.classList.remove("hidden");
@@ -80,7 +79,7 @@ function loopQuotes(quotes) {
         arrayQuotes.push(element);
     });
 
-    localStorage.setItem('quotes', arrayToString(arrayQuotes));
+    localStorage.setItem('quotes', JSON.stringify(arrayQuotes));
 }
 
 // //CRUD
@@ -110,7 +109,7 @@ function submit() {
             };
         }
 
-        localStorage.setItem('quotes', arrayToString(arrayQuotes));
+        localStorage.setItem('quotes', JSON.stringify(arrayQuotes));
 
         cancel();
         clearQuotes();
